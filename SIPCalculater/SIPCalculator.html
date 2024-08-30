@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sip-container">
+        <div class="sip-inputs">
+            <label>Monthly Investment: <span id="monthlyInvestmentValue">1000rs</span></label>
+            <input type="range" id="monthlyInvestmentRange" step="500" min="100" max="100000" value="1000" step="100">
+
+            <label>Investment Duration (years): <span id="durationValue">1 Year</span></label>
+            <input type="range" id="durationRange" step="1" min="1" max="50" value="1" step="1">
+
+            <label>Interest Rate (%): <span id="interestRateValue">8%</span></label>
+            <input type="range" id="interestRateRange" min="1" max="15" value="8" step="0.1">
+        </div>
+        <div class="sip-results">
+            <div class="currentValue">Current Value: <span id="currentValue">1000rs</span></div>
+            <div class="futureValue">Future Value: <span id="futureValue">12499rs</span></div>
+            <div class="totalGain">Total Gain: <span id="totalGain">19.61rs</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
