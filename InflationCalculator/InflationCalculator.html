@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <label>Money: <span id="moneyValue">1000rs</span></label>
+            <input type="range" id="moneyRange" step="500" min="1000" max="100000" value="1000" step="100">
+
+            <label>Time (years): <span id="timeValue">1 Year</span></label>
+            <input type="range" id="timeRange" step="1" min="1" max="50" value="1" step="1">
+
+            <label>Inflation Rate (%): <span id="inflationValue">2%</span></label>
+            <input type="range" id="inflationRange" min="1" max="15" value="2" step="0.1">
+        </div>
+        <div class="data">
+            <div class="presentMoney">Present Money: <span id="presentMoney">1000rs</span></div>
+            <div class="moneyAfterInflation">Money After Inflation: <span id="moneyAfterInflation">980.39rs</span></div>
+            <div class="moneyLost">Money Lost: <span id="moneyLost">19.61rs</span></div>
+        </div>
+    </div>
+    <script src="scritp.js"></script>
+</body>
+</html>
