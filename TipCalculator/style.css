@@ -1,0 +1,76 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --primary-color: #2a369d;
+    --secondary-color: #264653;
+    --accent-color: #1a73e8;
+    --background-color: #ffffff;
+    --card-background-color: #f0f4f8;
+    --text-color: #333333;
+    --card-shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--card-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--card-shadow-color);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.tipInput input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.resut {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+input:focus, button:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}

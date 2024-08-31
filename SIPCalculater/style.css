@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #2a369d; /* Deep blue for primary elements */
+    --secondary-color: #264653; /* Darker blue-gray for secondary elements */
+    --accent-color: #1a73e8; /* Lighter blue accent */
+    --background-color: #ffffff; /* White background for a clean look */
+    --card-background-color: #f0f4f8; /* Soft off-white for card backgrounds */
+    --text-color: #333333; /* Dark gray for text for better readability */
+    --card-shadow-color: rgba(0, 0, 0, 0.05); /* Lighter shadow for a subtle effect */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +16,7 @@
 }
 
 body {
-    background-color: #f4f4f9;
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +26,10 @@ body {
 .sip-container {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--card-background-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--card-shadow-color);
     width: 80%;
     max-width: 600px;
 }
@@ -32,7 +42,8 @@ body {
 
 .sip-inputs label, .sip-results div {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 input[type="range"] {
@@ -42,16 +53,16 @@ input[type="range"] {
 
 .sip-inputs label span, .sip-results span {
     font-weight: bold;
-    color: #333;
+    color: var(--primary-color);
 }
 
 .sip-results {
-    background-color: #f0f0f5;
+    background-color: var(--background-color);
     padding: 10px;
     border-radius: 10px;
 }
 
 .sip-results div {
     font-size: 18px;
+    color: var(--text-color);
 }
-    

@@ -1,12 +1,11 @@
-
 :root {
-    --primary-color: #2a369d; 
-    --secondary-color: #264653; 
-    --accent-color: #e76f51; 
-    --background-color: #f4f4f4; 
-    --card-background-color: #ffffff; 
-    --text-color: #333333; 
-    --card-shadow-color: rgba(0, 0, 0, 0.1); 
+    --primary-color: #2a369d; /* Deep blue for primary elements */
+    --secondary-color: #264653; /* Darker blue-gray for secondary elements */
+    --accent-color: #1a73e8; /* Lighter blue accent */
+    --background-color: #ffffff; /* White background for a clean look */
+    --card-background-color: #f0f4f8; /* Soft off-white for card backgrounds */
+    --text-color: #333333; /* Dark gray for text for better readability */
+    --card-shadow-color: rgba(0, 0, 0, 0.05); /* Lighter shadow for a subtle effect */
 }
 
 * {
@@ -50,6 +49,7 @@ a{
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--card-shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 150px;
 }
 
 .card:hover {
