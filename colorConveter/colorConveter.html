@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <input type="text" id="colorCode" placeholder="Enter color Code" >
+            <div class="select-box">
+                <div class="first">
+                    <label for="colorFrom">From:</label>
+                    <select name="colorFrom" id="colorFrom" class="colorFrom">
+                        <option value="rgb">RGB</option>
+                        <option value="hsl">HSL</option>
+                        <option value="hex">HEX</option>
+                    </select>
+                </div>
+                <div class="second">
+                    <label for="colorTo">To:</label>
+                    <select name="colorTo" id="colorTo" class="colorTo">
+                        <option value="rgb">RGB</option>
+                        <option value="hsl">HSL</option>
+                        <option value="hex">HEX</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <div id="result" class="result">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
